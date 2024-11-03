@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Aligulac II</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Leaderboard</h1>
+    <div class="table-responsive">
+        <table class="table table-striped table-bordered">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Rating</th>
+                    <th>vP</th>
+                    <th>vT</th>
+                    <th>vZ</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Serral</td>
+                    <td>3897</td>
+                    <td>4048</td>
+                    <td>3935</td>
+                    <td>3709</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Clem</td>
+                    <td>3715</td>
+                    <td>3811</td>
+                    <td>3525</td>
+                    <td>3810</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>MaxPax</td>
+                    <td>3576</td>
+                    <td>3525</td>
+                    <td>3608</td>
+                    <td>3595</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>herO</td>
+                    <td>3396</td>
+                    <td>3128</td>
+                    <td>3429</td>
+                    <td>3631</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Dark</td>
+                    <td>3298</td>
+                    <td>3399</td>
+                    <td>3443</td>
+                    <td>3053</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Reynor</td>
+                    <td>3291</td>
+                    <td>3400</td>
+                    <td>3350</td>
+                    <td>3122</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>ByuN</td>
+                    <td>3247</td>
+                    <td>3236</td>
+                    <td>3228</td>
+                    <td>3277</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Oliveira</td>
+                    <td>3183</td>
+                    <td>3037</td>
+                    <td>3204</td>
+                    <td>3307</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Cure</td>
+                    <td>3144</td>
+                    <td>3117</td>
+                    <td>3235</td>
+                    <td>3078</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>SHIN</td>
+                    <td>3088</td>
+                    <td>3122</td>
+                    <td>3260</td>
+                    <td>2882</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="text-center mt-4">
+        <button id="editProfileBtn" class="btn btn-primary">Editar perfil</button>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="editProfileModal" tabindex="-1" role="dialog" aria-labelledby="editProfileModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="editarPerfilModalLabel">Editar Perfil</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="editarPerfilForm">
+                    <div class="form-group">
+                        <label for="modalEmail">Email</label>
+                        <input type="email" class="form-control" id="modalEmail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalUsername">Username</label>
+                        <input type="text" class="form-control" id="modalUsername" required readonly>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalPassword">Password</label>
+                        <input type="password" class="form-control" id="modalPassword" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="modalRace">Race</label>
+                        <select class="form-control" id="modalRace" required>
+                            <option value="Protoss">Protoss</option>
+                            <option value="Zerg">Zerg</option>
+                            <option value="Terran">Terran</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" id="saveChangesBtn">Save</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="js/db.js"></script>
+</body>
+</html>

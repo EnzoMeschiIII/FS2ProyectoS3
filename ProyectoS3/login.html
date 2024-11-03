@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Aligulac II</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+
+<div class="container">
+    <header class="header text-center mb-4">
+        <h1>Login</h1>
+        <p class="subtitle">Aligulac is a free Stats page for professional players</p>
+    </header>
+
+    <section class="register-section mx-auto">
+        <form class="needs-validation" novalidate>
+            <div class="form-group row">
+                <label for="username" class="col-sm-3 col-form-label">Username:</label>
+                <div class="col-sm-9">
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="password" class="col-sm-3 col-form-label">Password:</label>
+                <div class="col-sm-9">
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+            </div>
+            <div class="form-group row">
+                <div class="col-sm-9 offset-sm-3">
+                    <button type="submit" class="btn btn-primary">Login</button>
+                    <a href="recovery.html" class="btn btn-secondary ml-2">Password Recovery</a>
+                </div>
+            </div>
+        </form>
+    </section>
+
+    <section class="epic-quote text-center mb-4">
+        <h2 class="quote-text">"Conquer yourself, conquer the enemy."</h2>
+        <span class="author">-Fenix</span>
+    </section>
+</div>
+
+<script src="js/db.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>

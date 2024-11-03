@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aligulac II</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        function redirigir() {
+            window.location.href = 'http://www.aligulac.com';
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <header class="header text-center mb-4">
+        <h1>Aligulac<img src="assets/imgSc2.png" alt="Logo" class="aligulac-logo"></h1>
+        <p class="subtitle">The Starcraft 2 Stats that you always wanted to know</p>
+    </header>
+
+    <section class="welcome-section text-center mb-4">
+        <h1>Join us and see what others cannot</h1>
+        <p class="epic-quote">
+            <span class="quote-text">Knowledge is power</span>
+            <span class="author">-Tassadar</span>
+        </p>
+    </section>
+
+    <div class="row auth-section justify-content-center mb-4">
+        <div class="col-12 col-md-4 text-center mb-2">
+            <a href="register.html">
+                <button class="register-btn btn btn-success btn-block">Register</button>
+            </a>
+        </div>
+        <div class="col-12 col-md-4 text-center mb-2">
+            <a href="login.html">
+                <button class="login-btn btn btn-primary btn-block">Login</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="text-center">
+        <button class="old-page-btn btn btn-secondary" onclick="redirigir()">Go to Old page</button>
+    </div>
+</div>
+<script src="js/db.js"></script>
+
+</body>
+</html>

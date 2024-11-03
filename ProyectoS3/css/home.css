@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.table {
+    margin-top: 20px;
+}
